@@ -1,4 +1,4 @@
-Smart Assistant for Research Summarization
+
 This project is a web-based, AI-powered assistant designed to help users quickly understand and interact with large documents. The assistant can read uploaded PDF or TXT files, provide concise summaries, answer free-form questions, and challenge the user with logic-based questions derived from the document's content.
 
 This application is built using Streamlit, LangChain, and the Google Gemini Pro API.
@@ -74,3 +74,4 @@ Auto-Summary: The initial text is passed to the Gemini model with a prompt to ge
 Ask Anything (Q&A): When a user asks a question, it is embedded, and the FAISS vector store is searched to find the most relevant text chunks. These chunks (the context) and the user's question are passed to the Gemini model, which generates an answer based only on the provided context. The source chunks are provided as justification.
 
 Challenge Me: The application retrieves relevant chunks from the document and uses the Gemini model to generate three unique questions. When the user submits an answer, the model evaluates it against the original context and provides reasoned feedback.
+
