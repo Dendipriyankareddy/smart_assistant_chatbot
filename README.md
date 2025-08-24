@@ -29,6 +29,8 @@ cd <your-repository-name>
 2. Create a Virtual Environment
 It's highly recommended to use a virtual environment to manage dependencies.
 
+![Uploading image.png…]()
+
 # For Windows
 python -m venv venv
 .\venv\Scripts\activate
@@ -74,4 +76,5 @@ Auto-Summary: The initial text is passed to the Gemini model with a prompt to ge
 Ask Anything (Q&A): When a user asks a question, it is embedded, and the FAISS vector store is searched to find the most relevant text chunks. These chunks (the context) and the user's question are passed to the Gemini model, which generates an answer based only on the provided context. The source chunks are provided as justification.
 
 Challenge Me: The application retrieves relevant chunks from the document and uses the Gemini model to generate three unique questions. When the user submits an answer, the model evaluates it against the original context and provides reasoned feedback.
+
 
